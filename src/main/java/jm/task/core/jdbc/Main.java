@@ -15,12 +15,13 @@ public class Main {
         userService.createUsersTable();
         userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
         userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
-        userService.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
-        userService.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
+        //userService.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
+        //userService.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
+
+        //userService.cleanUsersTable();
+        //userService.dropUsersTable();
+        userService.removeUserById(2);
         System.out.println(userService.getAllUsers().toString());
-        userService.cleanUsersTable();
-        userService.dropUsersTable();
-        // userService.removeUserById(2);
 
     }
 }
